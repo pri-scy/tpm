@@ -1,0 +1,114 @@
+<html>
+<head>
+<title> Signup Form Design Tutorial </title>   
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+    <div id="login-box">
+      <div class="left-box">
+
+{#        Electoral Commission#}
+        <table class="table">
+            <thead class="thead-dark">
+            <tr>
+                <th scope="col">#</th>
+                <th scope="col">First Name</th>
+                <th scope="col">Last Name</th>
+                <th scope="col">Age</th>
+            </tr>
+            </thead>
+
+            <tbody>
+            {% for citizen in results_EC %}
+                <tr>
+                    <th scope="row">1</th>
+                    <td>{{ citizen.first_name }}</td>
+                    <td>{{ citizen.last_name }}</td>
+                    <td>{{ citizen.age }}</td>
+                </tr>
+            {% endfor %}
+            </tbody>
+
+        </table>
+
+{#        Ghana Immigration Service#}
+        <table class="table">
+            <thead class="thead-dark">
+            <tr>
+                <th scope="col">#</th>
+                <th scope="col">First Name</th>
+                <th scope="col">Last Name</th>
+                <th scope="col">Age</th>
+            </tr>
+            </thead>
+
+            <tbody>
+            {% for citizen in results_GIS %}
+                <tr>
+                    <th scope="row">1</th>
+                    <td>{{ citizen.first_name }}</td>
+                    <td>{{ citizen.last_name }}</td>
+                    <td>{{ citizen.age }}</td>
+                </tr>
+            {% endfor %}
+            </tbody>
+
+        </table>
+
+{#        National Health Insurance Authority#}
+        <table class="table">
+            <thead class="thead-dark">
+            <tr>
+                <th scope="col">#</th>
+                <th scope="col">First Name</th>
+                <th scope="col">Last Name</th>
+                <th scope="col">Age</th>
+            </tr>
+            </thead>
+
+            <tbody>
+            {% for citizen in results_NHIA %}
+                <tr>
+                    <th scope="row">1</th>
+                    <td>{{ citizen.first_name }}</td>
+                    <td>{{ citizen.last_name }}</td>
+                    <td>{{ citizen.age }}</td>
+                </tr>
+            {% endfor %}
+            </tbody>
+
+        </table>
+
+{#        Driver Vehicle and Licensing Authority #}
+        <table class="table">
+            <thead class="thead-dark">
+            <tr>
+                <th scope="col">#</th>
+                <th scope="col">First Name</th>
+                <th scope="col">Last Name</th>
+                <th scope="col">Age</th>
+            </tr>
+            </thead>
+
+            <tbody>
+            {% for citizen in results_DVLA %}
+                <tr>
+                    <th scope="row">1</th>
+                    <td>{{ citizen.first_name }}</td>
+                    <td>{{ citizen.last_name }}</td>
+                    <td>{{ citizen.age }}</td>
+                </tr>
+            {% endfor %}
+            </tbody>
+
+        </table>
+
+
+        
+        </div>
+        <div class="or">OR</div>
+    </div>
+    
+</body>    
+</html>
